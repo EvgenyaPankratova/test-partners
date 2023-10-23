@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test site</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/logo_site-logo.svg">
+      </div>
+
+      <nav class="header__nav">
+
+        <div class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+       
+          <ul class="menubox">
+                  <li><a class="menu-item menu-item_title" href="#">Личный кабинет</a></li>
+                  <li><a class="menu-item" href="#" id="show-modal-btn">Вход в личный кабинет</a></li>
+                  <li><a class="menu-item menu-item_title" href="#">Как это работает</a></li>
+                  <li><a class="menu-item" href="#">Условия использования сервиса</a></li>
+                  <li><a class="menu-item" href="#">Способы оплаты</a></li>
+                  <li><a class="menu-item" href="#">Часто задаваемые вопросы</a></li>
+                  <li><a class="menu-item" href="#">Служба поддержки</a></li>
+
+                  
+          </ul>
+
+          
+        </div>
+
+        <div class="header__nav__help">
+          <img src="./img/ic_help.svg"/>
+        </div>
+
+        
+
+      </nav>
+
+      <!-- модальное окно -->
+      <dialog >
+        <div id="modal-box" >
+          <div class="modal-content">
+
+            <div class="modal-content__title">Введите логин и пароль для входа в Личный кабинет</div>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Логин">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+              </div>
+             
+              <button type="submit" class="btn btn-primary modal-submit">Войти</button>
+            </form>
+
+            <div class="modal-content__text"><a href="#">Напомнить пароль</a></div>
+            <div class="modal-content__text"><a href="#">Регистрация</a></div>
+
+          </div>
+          <button class="modal-close" id="close-modal-btn">✖</button>
+        </div>
+      </dialog>
+      <!-- модальное окно -->
+     
+
+    </header>
+
+    
+      <main class="main">
+
+      <div class="main__search-block">
+        <div class="main__search-block_title">Поиск начислений</div>
+
+        <div class="main__search-block_input-container">
+        <div class="main__search-block_input"><input type="text" placeholder="Введите данные для поиска"/><img src="./img/ic_search.svg"/></div>
+        <button>Найти</button>
+      </div>
+
+        <div class="main__search-block_text">Чем больше параметров введено, тем полнее результаты поиска</div>
+      </div>
+
+      <div class="main__list-block">
+
+        <div class="main__list-block_title">Узнайте, как оплатить</div>
+
+        <div class="list-block">
+
+          <div class="list-block-container">
+            <div class="list-block-container_img"><img src="./img/ic_gibdd1.svg"/></div>
+            <div class="list-block_subtitle">Штрафы ГИБДД
+            </div>
+
+            <div ><img class="list-block-icon" src="./img/ic_dropdown-arrow.svg"/></div>
+          </div>
+
+          
+          
+
+            
+          <div class="list-block_hidden-content" hidden>
+            <div ><p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа. </p>
+              <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+              <p><span>ПЛАТИТЬ ВОВРЕМЯ — ДЕШЕВЛЕ!</span> В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <hr/>
+
+        <div class="list-block">
+
+          <div class="list-block-container">
+            <div  class="list-block-container_img"><img src="./img/ic_fssp.svg"/></div>
+            <div class="list-block_subtitle">Судебные задолженности
+            </div>
+
+            <div ><img class="list-block-icon" src="./img/ic_dropdown-arrow.svg"/></div>
+          </div>
+          
+         
+            
+          <div class="list-block_hidden-content" hidden>
+            <div ><p>Для поиска начислений в ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства. Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+              
+              <p><span> УДОБНО!</span> Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <hr/>
+
+
+        <div class="list-block">
+
+          <div class="list-block-container">
+            <div  class="list-block-container_img"><img src="./img/ic_nalog.svg"/></div>
+            <div class="list-block_subtitle">Налоги
+            </div>
+
+            <div ><img class="list-block-icon" src="./img/ic_dropdown-arrow.svg"/></div>
+          </div>
+          
+
+            
+          <div class="list-block_hidden-content" hidden>
+            <div ><p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового документа, если у вас на руках есть квитанция. </p>
+              
+              <p><span> ВАЖНО!</span> Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только платежи физических лиц.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <hr/>
+
+
+        <div class="list-block">
+
+          <div class="list-block-container">
+            <div  class="list-block-container_img"><img src="./img/ic_rr.svg"/></div>
+            <div class="list-block_subtitle">Услуги Росреестра
+            </div>
+
+            <div ><img class="list-block-icon" src="./img/ic_dropdown-arrow.svg"/></div>
+          </div>
+          
+
+            
+          <div class="list-block_hidden-content" hidden>
+            <div ><p>В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик, указанный при подаче запроса в Росреестре. </p>
+           
+              <p><span>НЕТ КОДА?</span>  Если у вас ещё нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <hr/>
+
+        
+
+       
+
+      </div>
+
+
+      
+
+      <div class="main-big-list-block">
+
+        <div class="main-big-list-block__title">Здесь можно оплатить</div>
+
+        <div class="main-big-list-block__list">
+          <ul>
+            <li class="main-big-list-block__list-item"><a href="#">Штрафы ГИБДД</a></li>
+            <li class="main-big-list-block__list-item"><a href="#">Судебные задолженности</a></li>
+            <li class="main-big-list-block__list-item"><a href="#">Налоги</a></li>
+            <li class="main-big-list-block__list-item"><a href="#">Услуги Росреестра</a></li>
+            <li class="main-big-list-block__list-item">и другие услуги</li>
+          </ul>
+        </div>
+
+        <div class="main-big-list-block-content">
+
+          <div>
+          <div class="main-big-list-block-content__title">Штрафы ГИБДД</div>
+
+          <div ><p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа. </p>
+            <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+            <p><span>ПЛАТИТЬ ВОВРЕМЯ — ДЕШЕВЛЕ!</span> В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+          </div>
+        </div>
+
+          <div><img src="./img/pic_block1@2x.png"/></div>
+
+        </div>
+        <hr/>
+
+        <div class="main-big-list-block-content reversed">
+
+          <div class="main-big-list-block-content__text" >
+          <div class="main-big-list-block-content__title">Судебные задолженности</div>
+
+          <div ><p>Для поиска начислений в ГИС ГМП укажите документы: паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства. Вы можете указать реквизиты платежа самостоятельно, заполнив форму. </p>
+            
+            <p><span>УДОБНО! </span> Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+          </div>
+        </div>
+
+          <div class="main-big-list-block-content__img"><img src="./img/pic_block2@2x.png"/></div>
+
+        </div>
+        <hr/>
+
+
+        <div class="main-big-list-block-content">
+
+          <div>
+          <div class="main-big-list-block-content__title">Налоги</div>
+
+          <div ><p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или Индекс налогового документа, если у вас на руках есть квитанция. </p>
+            
+            <p><span>ВАЖНО!</span>  Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только платежи физических лиц.</p>
+          </div>
+        </div>
+
+          <div><img src="./img/pic_block3@2x.png"/></div>
+
+        </div>
+        <hr/>
+
+
+        <div class="main-big-list-block-content reversed">
+
+          <div class="main-big-list-block-content__text">
+          <div class="main-big-list-block-content__title">Услуги Росреестра</div>
+
+          <div ><p>В поисковой строке укажите Код платежа, который был отправлен вам на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+            
+            <p><span> НЕТ КОДА? </span>Если у вас ещё нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+          </div>
+        </div>
+
+          <div class="main-big-list-block-content__img"><img src="./img/pic_block4@2x.png"/></div>
+
+        </div>
+
+      </div>
+
+      
+
+        <h2 class="partners-title">С нами работают</h2>
+        <div class="main__partners-block">
+        <div class="main__partners-block_item div2">
+          <div><img src="./img/logo_partner1.svg"/></div>
+          <div>Партнёр 1</div>
+        </div>
+
+        <div class="main__partners-block_item div3">
+          <div><img src="./img/logo_partner2.svg"/></div>
+          <div>Компания-партнер с длинным названием</div>
+        </div>
+
+        <div class="main__partners-block_item div4">
+          <div><img src="./img/logo_partner3.svg"/></div>
+          <div>Партнёр 3</div>
+        </div>
+
+        <div class="main__partners-block_item div5">
+          <div><img src="./img/logo_partner4.svg"/></div>
+          <div>Название партнёра 4</div>
+        </div>
+
+        <div class="main__partners-block_item div6">
+          <div><img src="./img/logo_partner5.svg"/></div>
+          <div>Компания-партнёра 5</div>
+        </div>
+
+        <div class="main__partners-block_item div7">
+          <div><img src="./img/logo_partner6.svg"/></div>
+          <div>Партнер 6 с длинным названием</div>
+        </div>
+
+      </div>
+
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__info-block">
+        <div class="footer__info">© 2012 – 2020 <span>ООО «Название компании»</span></div>
+        </div>
+
+        <div><img src="./img/comodossl-trustlogo2.png" alt="logo"></div>
+      </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
