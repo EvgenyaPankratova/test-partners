@@ -18,7 +18,7 @@
   }
   dialog {
     border: none;
-    width: 100%;
+    width: 60%;
     height: auto;
   }
   .modal-content {
@@ -75,10 +75,13 @@
     }
     dialog {
       border: none;
-      width: 50%;
-      height: auto;
+      width: 400px;
+      height: 60%;
+      margin: 0 auto;
+      margin-top: 10%;
     }
     .modal-content {
+      padding: 20px 70px;
       border: none;
       position: relative;
       text-align: left;
@@ -91,6 +94,9 @@
           color: #004685;
           border-bottom: 1px dotted #004685;
         }
+      }
+      input{
+        margin-bottom: -15px;
       }
     }
     .modal-close {
@@ -108,6 +114,8 @@
       background-color: #e1133f;
       padding: 10px 5px;
       color: white;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -133,10 +141,13 @@
     }
     dialog {
       border: none;
-      width: 50%;
-      height: auto;
+      width: 400px;
+      height: 60%;
+      margin: 0 auto;
+      margin-top: 10%;
     }
     .modal-content {
+      padding: 20px 70px;
       border: none;
       position: relative;
       text-align: left;
@@ -149,6 +160,9 @@
           color: #004685;
           border-bottom: 1px dotted #004685;
         }
+      }
+      input{
+        margin-bottom: -15px;
       }
     }
     .modal-close {
@@ -166,6 +180,8 @@
       background-color: #e1133f;
       padding: 10px 5px;
       color: white;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -193,10 +209,13 @@
     }
     dialog {
       border: none;
-      width: 50%;
-      height: auto;
+      width: 400px;
+      height: 60%;
+      margin: 0 auto;
+      margin-top: 10%;
     }
     .modal-content {
+      padding: 20px 70px;
       border: none;
       position: relative;
       text-align: left;
@@ -209,6 +228,9 @@
           color: #004685;
           border-bottom: 1px dotted #004685;
         }
+      }
+      input{
+        margin-bottom: -15px;
       }
     }
     .modal-close {
@@ -226,6 +248,8 @@
       background-color: #e1133f;
       padding: 10px 5px;
       color: white;
+      margin-top: 15px;
+      margin-bottom: 10px;
     }
   }
 }
